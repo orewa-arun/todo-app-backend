@@ -1,0 +1,18 @@
+1. Build connect with mongoDB, create a cluser from atlas if necessary, connect to it from 
+mongodb compass, and create .env file, install dotenv in development mode, ex : yarn add -D dotenv.
+    - Steps to connect to mongoDB :
+        * Use an ODM (object data model) like mongoose, the alternative is a mongoDB driver.
+        * Use mongoose.connect(uri) (async method) where uri is the connection link to mongoDB database, Use try-catch and throw 
+        the errors if any.
+        * Then manage mongoose events to manage connections like mongoose.connection.on("connected", 
+        () => {console.log("mongoose connection successful!")})
+
+2. Create a script for running with and without compiling ts code
+    - Steps to create :
+        * Go to package.json, create a json object called "scripts" : { "dev" : "npx ts-node src/index.ts", "build" : "tsc -w"}
+        * Note that "dist" folder is where the compiled ts code will be generated, i.e in tsConfig we have to change outDir : "./dist"
+3. Define the types to be used
+4. Create the mongoDB schema and model.
+5. Define the routes and their purpose, using express
+6. Start writing the controllers for those routes using express
+7. Writing index.ts using express
