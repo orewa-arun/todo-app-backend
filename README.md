@@ -113,5 +113,5 @@ mongodb compass, and create .env file, install dotenv in development mode, ex : 
             git remote set-url origin https://github.com/orewa-arun/todo-app-backend.git
             ##or 
             git remote add origin https://github.com/orewa-arun/todo-app-backend.git
-            git push -u origin
+            git push -u origin main
         ```
