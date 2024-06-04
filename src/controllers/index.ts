@@ -87,3 +87,5 @@ const deleteTodo = async (req : Request, res : Response) : Promise<void> => {
         console.log("ERROR occured : ", error);
     }
 }
+
+export {getTodos, addTodo, updateTodo, deleteTodo};
