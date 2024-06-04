@@ -95,3 +95,23 @@ mongodb compass, and create .env file, install dotenv in development mode, ex : 
                 console.log(`Server running on http://localhost:${PORT}`)
             );
         ```
+
+8. Push the repo to github:
+    - Steps to build new branch:
+        * copy the current master branch into a new branch
+        ```bash
+        git checkout -u branch_name
+        ```
+        * create a new repo in github and copy the remote url shown and follow the steps:
+        ```bash
+            git remote add origin https://github.com/orewa-arun/todo-app-backend.git
+            git branch -M main
+            git push -u origin main
+        ```
+        * Incase you face the error of remote origins:
+        ```bash
+            git remote set-url origin https://github.com/orewa-arun/todo-app-backend.git
+            ##or 
+            git remote add origin https://github.com/orewa-arun/todo-app-backend.git
+            git push -u origin
+        ```
