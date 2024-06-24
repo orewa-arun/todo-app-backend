@@ -8,3 +8,16 @@ Content-Type: application/json
     "name" : "Drawing",
     "description" : "Lets get creative!"
 }
+
+### UPDATE TODO
+PUT http://localhost:4000/api/update-todo/6676c3fe1941284402917cd7
+Content-Type : application/json
+
+{
+    "name" : "exercise",
+    "description" : "Important for well being",
+    "status" : "true"
+}
+
+### DELETE TODO
+DELETE http://localhost:4000/api/delete-todo/6677d1664ae39e3c09c3aa16
